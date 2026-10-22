@@ -1,0 +1,273 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    grid-area: header;
+}
+.header img{
+    width: 100%;
+    height: auto;
+}
+.menu{
+    grid-area: menu;
+    padding: 10px;
+}
+ .gird-conatiner{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'menu'
+    'sp1'
+    'sp2'
+    'qc'
+    'content_top'
+    'spm'
+    'content_top2'
+    'spm2'
+    'footer';
+
+    background-color: white;
+    gap:  10px;
+    padding: 30px;
+ }
+ .sp1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+ }
+ .sp1 img{
+    width: 50%;
+    height: 100%;
+    margin-right: 5px;
+ }
+ .ifsp1 h3{
+    color: red;
+ }
+ .ifsp1 button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+ }
+ .ifsp1 button:hover{
+    background-color: red;
+ }
+ .ifsp2 button:hover{
+    background-color: red;
+ }
+ .ifsp1 a{
+    color: white;
+    text-decoration: none;
+ }
+ .sp2{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+ }
+ .sp2 img{
+    width: 50%;
+    height: 100%;
+    margin-right: 5px;
+ }
+ .ifsp2 h3{
+    color: red;
+ }
+ .ifsp2 button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+ }
+ .ifsp2 a{
+    color: white;
+    text-decoration: none;
+ }
+.qc img{
+    width: 100%;
+    height: 100%;
+}
+.content_top{
+	padding:15px 20px;
+	border:1px solid #EBE8E8;
+	border-radius:3px;
+}
+.content_top2{
+	padding:15px 20px;
+	border:1px solid #EBE8E8;
+	border-radius:3px;
+}
+
+.heading{
+	float:left;
+	margin-right:10%;
+}
+.heading h3{
+	font-family: 'Monda', sans-serif;
+	font-size:22px;
+	color:#0077df;
+	text-transform:uppercase;
+}
+.page-no{
+	float:right;
+	padding-top:5px;
+}
+.page-no p{
+	display:inline;
+	font-size:0.8125em;
+	padding:0.3em 0;
+	color: #333;
+}
+.page-no ul{
+	display:inline;
+}
+.page-no li{
+	display:inline;
+}
+.page-no li a{
+	font-size:0.8125em;
+	color: #333;
+	line-height: 1.6em;
+	font-family : verdana, arial, helvetica, helve, sans-serif;
+	padding:5px 5px;
+}
+.page-no li a:hover,.page-no li.active{
+	color:#0077df;
+	text-decoration:underline;
+}
+.spm{
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px gray;
+}
+ .spm img{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+ }
+
+ .spm:hover{
+    box-shadow: 0 0 20px gray;
+ }
+.spm2{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px gray;
+}
+ .spm2 img{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+ }
+
+ .spm2:hover{
+    box-shadow: 0 0 20px gray;
+ }
+.info-1{
+    margin: 10px;
+ }
+.info-1 h4{
+    color: red;
+}
+.info-1 a{
+    text-decoration: none;
+    color: white;
+}
+.info-1 button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+.info-1 button:hover{
+    box-shadow: 0 0 5px red;
+    border-color: red;
+}
+
+.info-1 p{
+    color: red;
+    font-size: 20px;
+}
+.info-1 fonts{
+    color: black;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.footer{
+   background-color: bisque;
+   color: steelblue;
+   font-size: 35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+   border-radius: 10px;
+   text-shadow: 0 0 5px green;
+   margin: 20px;
+}
+
+ @media(min-width: 600px){
+    .header {grid-area: 1/ span 6;}
+    .menu {grid-area: 2/ span 6;}
+    .sp1 {grid-area: 3/span 1;}
+    .sp2 {grid-area: 4/span 1;}
+    .qc {grid-area: 3/span 4;}
+    .qc {grid-row: 3/ span 2;}
+    .content_top {grid-area: 5/span 6;}
+    .spm {grid-area: 6/span 1;}
+    .content_top2 {grid-area: 7/span 6;}
+    .spm2 {grid-area: 8/span 1;}
+    .footer{grid-area: 9/span 6;}
+ }
+
+ .sp img{
+    width: 100%;
+    height: auto;
+}
+.lc{
+    display: flex;
+    justify-content: flex-start;
+}
+.dl{
+    margin-right: 30px;
+}
+.dl select{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+.sl input{
+    width: 100px;
+    border-radius: 5px;
+}
+.nutbam{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+.nutbam button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+.nutbam button:hover{
+    background-color: rgb(0, 0, 128);
+    box-shadow: 0 0 5px red;
+}
+.nutbam a{
+    text-decoration: none;
+    color: white;
+}
